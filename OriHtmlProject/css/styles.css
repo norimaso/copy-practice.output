@@ -52,6 +52,8 @@ header {
 }
 
 .works {
+  background-image: url(https://norimaso.github.io/copy-practice.output/OriHtmlProject/img/mountain.jpg);
+  background-size: cover;
   width: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -63,6 +65,19 @@ header {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+#contents ul {
+  align-items: center;
+}
+
+#contents ul li {
+  line-height: 1.8;
+  list-style-type: none;
+}
+
+#contents ul li a:hover {
+  color: coral;
 }
 
 .works > section {
