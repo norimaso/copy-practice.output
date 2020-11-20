@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>input form Practice</title>
+  <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+  <!-- テキスト -->
+  <section id="textarea">
+
+    <fieldset>
+      <legend>テスト用入力フォーム</legend>
+
+      <form action="test.php" method="post">
+
+        <div class="text">
+          <label for="l_name" style="margin-right: 22px;">userID</label>
+          <input type="text" id="l_name" placeholder="norimaso">
+        </div>
+        <div class="text">
+          <label for="l_password">password</label>
+          <input type="password" id="l_password" placeholder="secret!!!">
+        </div>
+        <div class="text">
+          <label for="l_message" style="margin-right: 5px;">message</label>
+          <textarea id="l_message" placeholder="一言どうぞ！！"></textarea>
+        </div>
+  
+        <div class="drop">
+          <label for="l_sports">好きなスポーツ</label>
+          <select id="l_sports" size="5">
+            <option>野球</option>
+            <option selected>サッカー</option>
+            <option>アメフト</option>
+            <option>ラグビー</option>
+            <option>ソフトボール</option>
+            <option>陸上</option>
+            <option>剣道</option>
+            <option>柔道</option>
+            <option>空手</option>
+            <option>その他</option>
+          </select>
+        </div>
+  
+        <div class="checkbox">
+          <legend>お使いのスマホ（複数選択可）</legend>
+          <label><input type="checkbox" checked> iPhone</label> 
+          <label><input type="checkbox"> Android</label> 
+          <label><input type="checkbox"> その他</label> 
+        </div>
+  
+        <div class="radiobox">
+          <legend>１番好きなスマホ</legend>
+          <label><input type="radio" name="phone" checked> iPhone</label> 
+          <label><input type="radio" name="phone"> Android</label> 
+          <label><input type="radio" name="phone"> その他</label> 
+        </div>
+  
+        <div class="other">
+          <label for="l_color">好きな色</label>
+          <input type="color" id="l_color">
+        </div>
+        <div class="other">
+          <label for="l_color">最近いつラーメン食べた？</label>
+          <input type="date" id="l_color">
+        </div>
+        <div class="other">
+          <label for="l_number">適当に数字を選ぶ</label>
+          <input type="number" id="l_number">
+        </div>
+        <div class="other">
+          <label for="l_range">今日の気分は？</label>
+          <input type="range" id="l_range" value="60">
+        </div>
+
+        <button>送信する</button>
+
+      </form>
+
+    </fieldset>
+
+  </section>
+</body>
+</html>
