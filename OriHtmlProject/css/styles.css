@@ -1,4 +1,6 @@
 body {
+  background-image: url('../img/mountain.jpg');
+  background-size: cover;
   color: #333;
   font-family: Verdana, sans-serif;
   margin: 0px;
@@ -52,11 +54,10 @@ header {
 }
 
 .works {
-  background-image: url(https://norimaso.github.io/copy-practice.output/OriHtmlProject/img/mountain.jpg);
-  background-size: cover;
   width: 400px;
   margin-right: auto;
   margin-left: auto;
+  color: coral;
 }
 
 .works > h1 {
@@ -74,6 +75,10 @@ header {
 #contents ul li {
   line-height: 1.8;
   list-style-type: none;
+}
+
+#contents ul li a {
+  text-decoration: none;
 }
 
 #contents ul li a:hover {
@@ -97,4 +102,8 @@ footer {
   font-size: 10px;
   margin-bottom: 60px;
   color: gray;
+}
+
+footer a {
+  text-decoration: none;
 }
