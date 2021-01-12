@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/* 全体 */
+body {
+  font-family: "ãƒ’ãƒ©ã‚®ãƒŽæ˜Žæœ ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", æ¸¸æ˜Žæœä½“, sans-serif;
+}
+.wrap {
+  overflow: hidden;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+
+
+/* ヘッダー全体 */
+.header-wrap {
+  background-image: url(https://danblog.tokyo/img/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+}
+/* トップ全体 */
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* トップ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+/* ロゴ */
+.header-logo {
+  height: 60px;
+}
+/* ナビゲーション */
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li {
+  list-style: none;
+  margin: 0 30px;
+}
+.header-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+/* ハンバーガー */
+.header-icon {
+  display: none;
+}
+/* ファーストビュー */
+.header-main__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+
+
+/* お知らせ全体 */
+.news {
+  padding: 90px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* お知らせタイトル */
+.news-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 60px;
+}
+/* お知らせリスト全体 */
+.news-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* お知らせリスト */
+.news-list li {
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+}
+/* お知らせリストリンク */
+.news-list li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.news-list__border {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 5px 8px;
+  margin: 0 30px;
+  font-size: 11px;
+}
+
+
+
+/* 施工事例全体 */
+.case {
+  padding: 90px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* 施工事例タイトル */
+.case-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 90px;
+}
+/* 施工事例 */
+.flexbox {
+  display: flex;
+}
+/* コンテンツ */
+.case-content {
+  width: 50%;
+  text-align: center;
+}
+/* 画像 */
+.case-content__img {
+  max-width: 430px;
+  margin: 0 auto;
+}
+.case-content__img img {
+  width: 100%;
+}
+/* 画像テキスト */
+.case-content__title {
+  font-size: 24px;
+  margin-top: 30px;
+}
+.case-content__text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+/* 詳細ボタン */
+.case-content__btn {
+  display: block;
+  margin-top: 15px;
+}
+.case-content__btn img {
+  width: 300px;
+}
+/* 施工実績一覧ボタン */
+.case-btn {
+  text-align: center;
+  margin-top: 80px;
+}
+.case-btn a {
+  text-decoration: none;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #000;
+  font-size: 20px;
+}
+
+
+
+/* リンク */
+.links {
+  display: flex;
+  margin-top: 90px;
+}
+.link-img {
+  display: block;
+  width: calc(100% / 3);
+}
+.link-img img {
+  width: 100%;
+}
+
+
+
+/* フッター */
+.footer {
+  background-color: #000;
+}
+/* フッター全体 */
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* フッターナビ全体 */
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+/* ロゴ */
+.footer-logo {
+  height: 40px;
+}
+/* フッターナビ */
+.footer-nav__list ul {
+  display: flex;
+}
+.footer-nav__list ul li {
+  margin: 0 30px;
+}
+.footer-nav__list ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+/* コピーライト */
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+
+@media screen and (max-width:960px) {
+
+  .header-wrap {
+    height: 50vh;
+  }
+  .header {
+    padding: 15px 20px;
+  }
+  .header-logo {
+    height: 40px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-icon {
+    display: block;
+    font-size: 28px;
+  }
+  .header-main__text {
+    font-size: 24px;
+  }
+
+
+
+  .news {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+
+}
