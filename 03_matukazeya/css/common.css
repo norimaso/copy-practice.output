@@ -1,0 +1,575 @@
+@charset "utf-8";
+
+/* 共通 */
+@font-face {
+    font-family: 'kyokasho_l';
+    src: url('http://www.matsukazeya.com/fonts/kyokasho_l.otf'),url('http://www.matsukazeya.com/fonts/Hannari-web-v.eot');
+}
+html {
+  font-family: 'kyokasho_l';
+}
+
+/* ヘッダー(見えたり消えたり) */
+header {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+  top: 0;
+}
+header nav {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+}
+header nav h1 {
+  width: 165px;
+  float: left;
+}
+header nav ul {
+  overflow: hidden;
+  width: 800px;
+  float: right;
+}
+header nav ul li {
+  width: auto;
+  float: left;
+  margin-right: 20px;
+  font-size: 90%;
+  font-weight: 600;
+  padding: 12px 0 9px;
+}
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header nav ul .contact {
+  border-bottom: 3px solid #c3b684;
+}
+header nav ul .contact:hover {
+  border-bottom: 3px solid #000;
+}
+header nav ul .contact a:hover {
+  opacity: 0.6;
+}
+header nav ul li:hover {
+  border-bottom: 3px solid #c3b684;
+}
+header nav ul li a:hover {
+  opacity: 0.6;
+}
+/* レスポンシブヘッダー */
+/* ハンバーガー押下後画面 */
+#mob_header, #mob_nav {
+  display: none;
+}
+
+
+
+/* メイン画面 */
+#main {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: url(http://www.matsukazeya.com/images/home/main.jpg) no-repeat center center;
+  background-size: cover;
+}
+#main h1 {
+  position: absolute;
+  width: 100%;
+  height: 182px;
+  top: 50%;
+  margin-top: -91px;
+  text-align: center;
+}
+
+
+
+/* コンセプト */
+#concept {
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+}
+#concept h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.7em;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+#concept article {
+  margin-bottom: 35px;
+  font-size: 1.1em;
+  line-height: 1.9;
+}
+.mob_disp {
+  display: none;
+}
+#concept p.sign {
+  margin-bottom: 30px;
+}
+#concept p.name {
+  margin-bottom: 50px;
+}
+#concept p.btn {
+  width: 100%;
+  position: relative;
+}
+p.btn a {
+  display: block;
+  width: 185px;
+  border: 2px solid #7d7d7d;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+p.btn a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/* あんどーなつ */
+#donuts {
+  position: relative;
+  background: url(http://www.matsukazeya.com/images/home/bg_donuts.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 530px;
+}
+#donuts .wrapper {
+  position: absolute;
+  width: 512px;
+  top: 0;
+  left: 50%;
+  padding-top: 110px;
+}
+#donuts .wrapper .subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#donuts .wrapper h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+#donuts .wrapper h1 span {
+  font-size: 70%;
+}
+#donuts .wrapper article {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+#donuts .btn a {
+  background-color: rgba(255, 255, 255, 0);
+}
+#donuts p.btn a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* 商品のご紹介 */
+#products {
+  width: 100%;
+  padding: 100px 0;
+  background: url(http://www.matsukazeya.com/images/bg_beige.png) repeat 0 0;
+}
+#products h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+#products article {
+  margin-bottom: 65px;
+  text-align: center;
+}
+#products .box {
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto 65px;
+}
+
+
+
+/* お知らせ */
+#news {
+  padding: 100px 0;
+}
+#news h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+#news #fb {
+  border-top: 1px solid #ede9da;
+  margin-bottom: 30px;
+}
+#news p.btn a:hover {
+  background-color: rgba(67,97,167,1);
+  color: #fff;
+}
+
+
+/* ご注文・お問い合わせ */
+#contact {
+  padding: 100px 0;
+  text-align: center;
+  background: url(http://www.matsukazeya.com/images/bg_beige.png) repeat 0 0;
+}
+#contact h1 {
+  width: 100%;
+  margin-bottom: 60px;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+#contact article {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+#contact .tel {
+  font-size: 1.9em;
+  margin-bottom: 20px;
+}
+#contact .btn {
+  margin-top: 60px;
+}
+
+
+
+/* 店舗情報 */
+#shop {
+  position: relative;
+  padding: 100px 0;
+}
+#shop h1 {
+  width: 100%;
+  margin-bottom: 60px;
+  font-size: 1.7em;
+  font-weight: 500;
+  text-align: center;
+}
+#shop .wrapper {
+  width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#shop .wrapper .detail {
+  width: 480px;
+  margin-bottom: 30px;
+}
+#shop .wrapper .detail h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#shop .wrapper .detail table {
+  width: 100%;
+}
+#shop .wrapper .detail table th {
+  width: 130px;
+  text-align: left;
+  font-weight: 300;
+}
+#shop .wrapper .detail table td {
+  padding: 12px 0;
+  line-height: 1.5;
+}
+#shop .wrapper .box_l {
+  float: left;
+}
+#shop .wrapper .map {
+  position: relative;
+  width: 480px;
+  height: 256px;
+}
+#shop .wrapper .map iframe {
+  width: 100%;
+  height: 256px;
+}
+#shop .wrapper .box_r {
+  float: right;
+}
+
+
+
+/* フッター */
+footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+footer .wrapper {
+  width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+footer .wrapper .box_l {
+  float: left;
+}
+footer .wrapper .info h1 {
+  margin-bottom: 35px;
+}
+footer .wrapper .info .name {
+  flex: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+footer .wrapper .info .address {
+  margin-bottom: 12px;
+}
+footer .wrapper .fnav {
+  width: 510px;
+}
+footer .wrapper .fnav .nav_wrap {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+footer .wrapper .fnav .nav_wrap ul {
+  width: 170px;
+  font-size: 90%;
+  font-weight: 600;
+}
+footer .wrapper .fnav .nav_wrap ul li {
+  margin-bottom: 13px;
+}
+footer .wrapper .fnav .nav_wrap ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .wrapper .fnav .nav_wrap ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+footer .wrapper .fnav .nav_wrap .long {
+  width: 180px;
+}
+footer .wrapper .fnav .nav_wrap .short {
+  width: 150px;
+}
+footer .wrapper .box_r {
+  float: right;
+}
+footer .wrapper .fnav .sns {
+  text-align: right;
+}
+footer .copyright {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 30px 0;
+  flex: 90%;
+}
+
+
+
+/* レスポンシブ */
+@media screen and (max-width: 1024px) {
+
+  /* ヘッダー */
+  header {
+    display: none!important;
+  }
+
+
+
+  /* レスポンシブヘッダー */
+  #mob_header {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 108;
+    padding: 10px 0;
+  }
+  #mob_header p.btn {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    width: 45px;
+  }
+
+
+
+  /* ハンバーガー押下後画面 */
+  #mob_nav {
+    background: #000;
+    position: fixed;
+    z-index: 109;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  #mob_nav ul {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  #mob_nav ul .close {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  #mob_nav ul li {
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+  }
+  #mob_nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+  /* メイン画面 */
+  #main {
+    background-image: url(http://www.matsukazeya.com/images/home/mob_main.jpg);
+  }
+
+
+
+  /* コンセプト */
+  #concept h1 {
+    width: 100%;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+  }
+  #concept article {
+    margin-bottom: 35px;
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+
+
+  /* あんどーなつ */
+  #donuts {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #donuts .wrapper {
+    width: 100%;
+    margin: 1rem auto;
+    position: relative;
+    left: 0;
+    padding: 0;
+  }
+  #donuts .wrapper article {
+    display: none;
+  }
+
+
+
+  /* 商品のご紹介 */
+  #products .box {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #products .box p {
+    width: 48%;
+  }
+  #products .box .mob_del {
+    display: none;
+  }
+
+
+
+  /* お知らせ */
+  #news {
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+
+  /* ご注文・お問い合わせ */
+  #contact h1 {
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+  #contact article {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto 60px;
+  }
+  #contact .tel {
+    font-size: 1.5em;
+  }
+
+
+
+  /* 店舗情報 */
+  #shop {
+    width: 100%;
+    overflow: hidden;
+  }
+  #shop .wrapper {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  #shop .wrapper .detail {
+    width: 100%;
+  }
+  #shop .wrapper .map {
+    position: relative;
+    width: 100%;
+    height: 256px;
+  }
+  #shop .wrapper .map iframe {
+    width: 100%;
+    height: 256px;
+  }
+
+
+
+  /* フッター */
+  footer .wrapper {
+    width: 100%;
+  }
+  footer .wrapper .info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .wrapper .info h1 {
+    width: 100%;
+    text-align: center;
+  }
+  footer .wrapper .fnav .nav_wrap {
+    display: none;
+  }
+
+}
