@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------
+共通
+---------------------------------------------------------------*/
+/* タイトルエリア */
+.common-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+/* タイトル大 */
+.large {
+  font-size: 3.2rem;
+}
+/* タイトル小 */
+.small {
+  font-size: 2rem;
+}
+
+
+/* --------------------------------------------------------------
+ヘッダー
+---------------------------------------------------------------*/
+/* 全体の背景色 */
+.page-header {
+  background-color: #5a442a;
+}
+/* ページタイトルの内側余白 */
+.page-header__inner {
+  padding: 24px 0;
+}
+/* ページタイトル */
+.page-header__title {
+  color: #fff;
+  line-height: 1;
+}
+/* ビジュアル */
+.page-header__main-visual img {
+  width: 100%;
+}
+
+
+/* --------------------------------------------------------------
+メインコンテンツ
+---------------------------------------------------------------*/
+/* 全体の内側余白と背景色 */
+.main-content {
+  padding: 50px 0;
+  background-color: #faf5ed;
+}
+/* ヘッダー下部の外側余白 */
+.section-header {
+  margin-bottom: 30px;
+}
+/* ヘッダータイトル */
+.section-header__title {
+  line-height: 1;
+}
+/* 写真リスト下部の外側余白 */
+.work-list {
+  margin-bottom: 50px;
+}
+/* 写真＋テキストエリア下部の外側余白(最後は除く) */
+.work-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+/* 写真＋テキストエリアの配置 */
+.photo-work {
+  display: flex;
+}
+/* 写真エリア */
+.photo-work__image {
+  width: 480px;
+  margin-right: 20px;
+}
+/* テキストエリア */
+.photo-work__text {
+  font-size: 1.6rem;
+}
+/* 過去写真リスト */
+.old-works {
+  line-height: 1;
+  text-align: center;
+}
+/* 過去写真リストのリンク */
+.old-works a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+/* 過去写真リストのホバー時 */
+.old-works a:hover {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------
+フッター
+---------------------------------------------------------------*/
+/* 全体の内側余白と背景色 */
+.page-footer {
+  padding: 22px 0;
+  background-color: #5a442a;
+}
+/* フッターテキスト */
+.page-footer p {
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
