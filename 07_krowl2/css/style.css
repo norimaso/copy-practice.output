@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* 共通 */
+.section {
+  padding: 100px 0;
+}
+.section-title, .section-title__white {
+  margin-bottom: 50px;
+  font-size: 3.2rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.section-title__white {
+  color: #fff;
+}
+.section-text {
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: center;
+}
+.section-text:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+/* ヘッダー */
+.page-header {
+  padding-top: 40%;
+  background: url(../images/bg-main_visual.jpg) center top no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.page-header img {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+/* イントロ */
+#intro {
+  background-color: #fffff3;
+}
+
+/* メインコンテンツ */
+#feature {
+  background: url(../images/bg-content.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.feature-list {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .3);
+}
+.feature-list__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.feature-block {
+  display: flex;
+  background-color: #fffff3;
+}
+.feature-block__image {
+  width: 50%;
+}
+.feature-block__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feature-block__wrapper {
+  width: 50%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.feature-block__title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  line-height: 1.75;
+}
+.feature-block__text {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+/* 導入企業様 */
+#client {
+  background-color: #fffff3;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  width: 780px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* フッター */
+.page-footer {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 24px 20px;
+  background-color: #000;
+}
+.page-footer__copyright {
+  font-size: 1.2rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.page-footer__nav ul {
+  display: flex;
+}
+.page-footer__nav ul li {
+  line-height: 1;
+}
+.page-footer__nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+.page-footer__nav ul li a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.page-footer__nav ul li a:hover {
+  color: skyblue;
+  opacity: 0.6;
+  transition: .6s;
+}
